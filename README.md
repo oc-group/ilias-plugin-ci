@@ -1,2 +1,2 @@
-# ilias-plugin_ci
-CI for ILIAS plugins
+# CI for ILIAS plugins
+Run code analysis against a ILIAS plugin using GitHub Actions.
