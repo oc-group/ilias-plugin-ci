@@ -18,7 +18,6 @@ return (new PhpCsFixer\Config())
             'tokens' => [
                 'continue',
                 'extra',
-                'return',
                 'throw',
                 'use',
                 'parenthesis_brace_block',
