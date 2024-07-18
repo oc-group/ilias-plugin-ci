@@ -25,6 +25,8 @@
 
     <exclude name="Generic.Files.LineLength.TooLong" />
 
+    <exclude name="Squiz.Classes.ValidClassName.NotCamelCaps" />
+
     <!-- Direcories to check -->
     <file>../classes</file>
 
