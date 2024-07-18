@@ -9,12 +9,17 @@
 
     <!-- Aggiungi eventuali esclusioni di regole troppo restrittive -->
     <exclude name="Generic.Files.LineLength"/>
+    <exclude name="Generic.Files.LineLength.TooLong"/>
     <exclude name="Generic.Commenting.DocComment.MissingCategoryTag"/>
     <exclude name="Generic.Commenting.DocComment.MissingPackageTag"/>
     <exclude name="Generic.Commenting.DocComment.MissingLicenseTag"/>
     <exclude name="Generic.Commenting.DocComment.MissingLinkTag"/>
     <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
     <exclude name="PSR1.Classes.ClassDeclaration.MissingClassNameCapitalLetter"/>
+    <exclude name="PSR1.Classes.ClassDeclaration.ClassNameNotCamelCaps"/>
+    <exclude name="PSR1.Classes.ClassDeclaration.PascalCaseClassName"/>
+    <exclude name="PSR1.Files.SideEffects.FoundWithSymbols"/>
+    
 
     <!-- Direcories to check -->
     <file>../classes</file>
