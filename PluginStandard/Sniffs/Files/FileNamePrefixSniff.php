@@ -15,7 +15,7 @@ class FileNamePrefixSniff implements Sniff
     public function process(File $phpcsFile, $stackPtr)
     {
         $fileName = basename($phpcsFile->getFileName(), '.php');
-        $className = $phpcsFile->findNext(T_STRING, 0);
+        $className = $phpcsFile->getDeclarationName($stackPtr);
         $classNameContent = $phpcsFile->getTokens()[$className]['content'];
 
         if (strpos($fileName, 'class.' . $classNameContent) !== 0) {

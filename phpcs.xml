@@ -6,7 +6,6 @@
 
     <!-- Include standards -->
     <rule ref="PSR12"/>
-    <rule ref="./PluginStandard/ruleset.xml"/>
 
     <rule ref="Generic.Commenting.Todo"/>
     <rule ref="Generic.Commenting.Todo.TaskFound">
@@ -27,11 +26,11 @@
     <exclude name="Generic.Commenting.DocComment.MissingPackageTag"/>
     <exclude name="Generic.Commenting.DocComment.MissingLicenseTag"/>
     <exclude name="Generic.Commenting.DocComment.MissingLinkTag"/>
-    <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
-    <exclude name="PSR1.Classes.ClassDeclaration.MissingClassNameCapitalLetter"/>
-    <exclude name="PSR1.Classes.ClassDeclaration.ClassNameNotCamelCaps"/>
-    <exclude name="PSR1.Classes.ClassDeclaration.PascalCaseClassName"/>
-    <exclude name="PSR1.Files.SideEffects.FoundWithSymbols"/>
+    <exclude name="PSR12.Classes.ClassDeclaration.MissingNamespace"/>
+    <exclude name="PSR12.Classes.ClassDeclaration.MissingClassNameCapitalLetter"/>
+    <exclude name="PSR12.Classes.ClassDeclaration.ClassNameNotCamelCaps"/>
+    <exclude name="PSR12.Classes.ClassDeclaration.PascalCaseClassName"/>
+    <exclude name="PSR12.Files.SideEffects.FoundWithSymbols"/>
 
     <!-- Direcories to check -->
     <file>../classes</file>
@@ -39,4 +38,6 @@
     <!-- Exclude paths -->
     <exclude-pattern>../ilias-plugin-ci</exclude-pattern>
     <exclude-pattern>*/vendor/*</exclude-pattern>
+
+    <rule ref="./PluginStandard/ruleset.xml"/>
 </ruleset>
