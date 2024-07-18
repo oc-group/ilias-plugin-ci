@@ -26,10 +26,12 @@
     <exclude name="Generic.Commenting.DocComment.MissingPackageTag"/>
     <exclude name="Generic.Commenting.DocComment.MissingLicenseTag"/>
     <exclude name="Generic.Commenting.DocComment.MissingLinkTag"/>
+    <exclude name="PSR12.Classes.ClassDeclaration.Namespace" />
     <exclude name="PSR12.Classes.ClassDeclaration.MissingNamespace"/>
     <exclude name="PSR12.Classes.ClassDeclaration.MissingClassNameCapitalLetter"/>
-    <exclude name="PSR12.Classes.ClassDeclaration.ClassNameNotCamelCaps"/>
+    <exclude name="PSR12.Classes.ClassDeclaration.PascalCase" />
     <exclude name="PSR12.Classes.ClassDeclaration.PascalCaseClassName"/>
+    <exclude name="PSR12.Classes.ClassDeclaration.ClassNameNotCamelCaps"/>
     <exclude name="PSR12.Files.SideEffects.FoundWithSymbols"/>
 
     <!-- Direcories to check -->
