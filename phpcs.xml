@@ -6,7 +6,7 @@
 
     <!-- Include standards -->
     <rule ref="PSR12"/>
-    <rule ref="PluginStandard"/>
+    <rule ref="./PluginStandard/ruleset.xml"/>
 
     <rule ref="Generic.Commenting.Todo"/>
     <rule ref="Generic.Commenting.Todo.TaskFound">
