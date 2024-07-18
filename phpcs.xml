@@ -6,9 +6,7 @@
 
     <!-- Include standards -->
     <rule ref="PSR12"/>
-
-    <rule ref="PluginStandard.Sniffs.Classes.ClassNamePrefixSniff"/>
-    <rule ref="PluginStandard.Sniffs.Files.FileNamePrefixSniff"/>
+    <rule ref="PluginStandard"/>
 
     <rule ref="Generic.Commenting.Todo"/>
     <rule ref="Generic.Commenting.Todo.TaskFound">

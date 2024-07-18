@@ -1,6 +1,6 @@
 <?php
 
-namespace MyCustomStandard\Sniffs\Classes;
+namespace PluginStandard\Sniffs\Classes;
 
 use PHP_CodeSniffer\Sniffs\Sniff;
 use PHP_CodeSniffer\Files\File;

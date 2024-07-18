@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<ruleset name="PluginStandard">
+    <description>Custom standard for ensuring class and file name prefixes.</description>
+    <rule ref="PluginStandard.Sniffs.Classes.ClassNamePrefixSniff"/>
+    <rule ref="PluginStandard.Sniffs.Files.FileNamePrefixSniff"/>
+</ruleset>
