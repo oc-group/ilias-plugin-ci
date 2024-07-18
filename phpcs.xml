@@ -4,27 +4,27 @@
         Custom PHP CodeSniffer ruleset for ILIAS plugins.
     </description>
 
-    <!-- Include standards -->
-    <rule ref="PSR12"/>
-
-    <rule ref="PSR1">
+    <!-- PSR-12 Standard -->
+    <rule ref="PSR12">
+        <rule ref="Generic.Files.LineEndings">
+            <properties>
+                <property name="eolChar" value="\n" />
+            </properties>
+        </rule>
+        <rule ref="Generic.Files.LineLength">
+            <properties>
+                <property name="lineLimit" value="120"/>
+                <property name="absoluteLineLimit" value="150"/>
+            </properties>
+        </rule>
         <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace" />
         <exclude name="PSR1.Classes.ClassDeclaration" />
         <exclude name="Squiz.Classes.ValidClassName" />
     </rule>
 
+    <!-- Other rules -->
     <rule ref="Generic.Commenting.Todo" />
-    <rule ref="Generic.Commenting.Todo.TaskFound">
-        <type>warning</type>
-    </rule>
-
-    <rule ref="Generic.Files.LineEndings">
-        <properties>
-            <property name="eolChar" value="\n" />
-        </properties>
-    </rule>
-
-    <exclude name="Generic.Files.LineLength.TooLong" />
+    <rule ref="./PluginStandard/ruleset.xml"/>
 
     <!-- Direcories to check -->
     <file>../classes</file>
@@ -32,6 +32,4 @@
     <!-- Exclude paths -->
     <exclude-pattern>../ilias-plugin-ci</exclude-pattern>
     <exclude-pattern>*/vendor/*</exclude-pattern>
-
-    <rule ref="./PluginStandard/ruleset.xml"/>
 </ruleset>
