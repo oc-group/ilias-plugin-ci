@@ -6,6 +6,7 @@
 
     <!-- Includi gli standard di codifica di PSR-2 -->
     <rule ref="PSR12"/>
+    <rule ref="./PluginStandard/ruleset.xml"/>
 
     <!-- Aggiungi eventuali esclusioni di regole troppo restrittive -->
     <exclude name="Generic.Files.LineLength"/>
