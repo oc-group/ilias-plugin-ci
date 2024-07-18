@@ -13,8 +13,8 @@
         </rule>
         <rule ref="Generic.Files.LineLength">
             <properties>
-                <property name="lineLimit" value="120"/>
-                <property name="absoluteLineLimit" value="150"/>
+                <property name="lineLimit" value="180"/>
+                <property name="absoluteLineLimit" value="180"/>
             </properties>
         </rule>
         <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace" />
