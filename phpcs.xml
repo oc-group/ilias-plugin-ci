@@ -20,7 +20,6 @@
     <exclude name="PSR1.Classes.ClassDeclaration.ClassNameNotCamelCaps"/>
     <exclude name="PSR1.Classes.ClassDeclaration.PascalCaseClassName"/>
     <exclude name="PSR1.Files.SideEffects.FoundWithSymbols"/>
-    
 
     <!-- Direcories to check -->
     <file>../classes</file>
