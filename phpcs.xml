@@ -26,6 +26,4 @@
 
     <!-- Exclude paths -->
     <exclude-pattern>*/vendor/*</exclude-pattern>
-
-    <!-- Aggiungi ulteriori regole personalizzate se necessario -->
 </ruleset>
