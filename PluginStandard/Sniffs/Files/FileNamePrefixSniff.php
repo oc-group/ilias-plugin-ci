@@ -15,12 +15,15 @@ class FileNamePrefixSniff implements Sniff
     public function process(File $phpcsFile, $stackPtr)
     {
         $fileName = basename($phpcsFile->getFileName(), '.php');
-        $className = $phpcsFile->findNext(T_CLASS, 0);
-        $classNameContent = $phpcsFile->getTokens()[$className]['content'];
 
-        if (strpos($fileName, 'class.' . $classNameContent) !== 0) {
+        $tokens = $phpcsFile->getTokens();
+        $classToken = $phpcsFile->findNext(T_CLASS, 0);
+        $classNameToken = $phpcsFile->findNext(T_STRING, $classToken);
+        $className = $tokens[$classNameToken]['content'];
+
+        if (strpos($fileName, 'class.' . $className) !== 0) {
             $error = 'File name "%s" must start with "class.%s"';
-            $data = [$fileName, $classNameContent];
+            $data = [$fileName, $className];
             $phpcsFile->addError($error, $stackPtr, 'FileNamePrefix', $data);
         }
     }
