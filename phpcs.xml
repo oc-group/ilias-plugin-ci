@@ -10,23 +10,21 @@
     <rule ref="PSR1">
         <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace" />
         <exclude name="PSR1.Classes.ClassDeclaration" />
+        <exclude name="Squiz.Classes.ValidClassName" />
     </rule>
 
-    <rule ref="Generic.Commenting.Todo"/>
+    <rule ref="Generic.Commenting.Todo" />
     <rule ref="Generic.Commenting.Todo.TaskFound">
         <type>warning</type>
     </rule>
 
     <rule ref="Generic.Files.LineEndings">
         <properties>
-            <property name="eolChar" value="\n"/>
+            <property name="eolChar" value="\n" />
         </properties>
     </rule>
 
     <exclude name="Generic.Files.LineLength.TooLong" />
-
-    <exclude name="Squiz.Classes.ValidClassName.NotPascalCase" />
-    <exclude name="Squiz.Classes.ValidClassName.NotCamelCaps" />
 
     <!-- Direcories to check -->
     <file>../classes</file>
