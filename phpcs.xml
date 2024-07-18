@@ -18,6 +18,14 @@
         </properties>
     </rule>
 
+    <exclude name="Generic.Files.LineLength.TooLong" />
+
+    <exclude name="Squiz.Classes.ValidClassName.NotCamelCaps" />
+
+    <rule ref="PSR1">
+        <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace" />
+    </rule>
+
     <!-- Direcories to check -->
     <file>../classes</file>
 
