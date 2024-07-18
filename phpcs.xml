@@ -4,11 +4,11 @@
         Custom PHP CodeSniffer ruleset for ILIAS plugins.
     </description>
 
-    <!-- Includi gli standard di codifica di PSR-2 -->
+    <!-- Include standards -->
     <rule ref="PSR12"/>
     <rule ref="./PluginStandard/ruleset.xml"/>
 
-    <!-- Aggiungi eventuali esclusioni di regole troppo restrittive -->
+    <!-- Exclude too restrictive rules -->
     <exclude name="Generic.Files.LineLength"/>
     <exclude name="Generic.Files.LineLength.TooLong"/>
     <exclude name="Generic.Commenting.DocComment.MissingCategoryTag"/>
