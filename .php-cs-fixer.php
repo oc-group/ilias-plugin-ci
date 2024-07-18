@@ -5,7 +5,7 @@
  */
 
 $finder = PhpCsFixer\Finder::create()
-    ->in('classes');
+    ->in('../classes');
 
 return (new PhpCsFixer\Config())
     ->setRiskyAllowed(true)

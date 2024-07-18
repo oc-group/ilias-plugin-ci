@@ -11,15 +11,13 @@
     <exclude name="Generic.Files.LineLength"/>
     <exclude name="Generic.Commenting.DocComment.MissingCategoryTag"/>
     <exclude name="Generic.Commenting.DocComment.MissingPackageTag"/>
-    <exclude name="Generic.Commenting.DocComment.MissingAuthorTag"/>
     <exclude name="Generic.Commenting.DocComment.MissingLicenseTag"/>
     <exclude name="Generic.Commenting.DocComment.MissingLinkTag"/>
     <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
-    <exclude name="PSR1.Classes.ClassDeclaration.MissingClassName"/>
     <exclude name="PSR1.Classes.ClassDeclaration.MissingClassNameCapitalLetter"/>
 
     <!-- Direcories to check -->
-    <file>./classes</file>
+    <file>../classes</file>
 
     <!-- Exclude paths -->
     <exclude-pattern>*/vendor/*</exclude-pattern>
