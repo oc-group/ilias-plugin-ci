@@ -8,6 +8,18 @@
     <rule ref="PSR12"/>
     <rule ref="./PluginStandard/ruleset.xml"/>
 
+    <rule ref="Generic.Commenting.Todo"/>
+    <rule ref="Generic.Commenting.Todo.TaskFound">
+        <message>Please review this TODO comment: %s</message>
+        <type>warning</type>
+    </rule>
+
+    <rule ref="Generic.Files.LineEndings">
+        <properties>
+            <property name="eolChar" value="\n"/>
+        </properties>
+    </rule>
+
     <!-- Exclude too restrictive rules -->
     <exclude name="Generic.Files.LineLength"/>
     <exclude name="Generic.Files.LineLength.TooLong"/>
@@ -25,5 +37,6 @@
     <file>../classes</file>
 
     <!-- Exclude paths -->
+    <exclude-pattern>../ilias-plugin-ci</exclude-pattern>
     <exclude-pattern>*/vendor/*</exclude-pattern>
 </ruleset>
