@@ -9,7 +9,6 @@
 
     <rule ref="Generic.Commenting.Todo"/>
     <rule ref="Generic.Commenting.Todo.TaskFound">
-        <message>Please review this TODO comment: %s</message>
         <type>warning</type>
     </rule>
 
@@ -19,9 +18,9 @@
         </properties>
     </rule>
 
-    <!-- Exclude too restrictive rules -->
     <exclude name="Generic.Files.LineLength"/>
     <exclude name="Generic.Files.LineLength.TooLong"/>
+
     <exclude name="Generic.Commenting.DocComment.MissingCategoryTag"/>
     <exclude name="Generic.Commenting.DocComment.MissingPackageTag"/>
     <exclude name="Generic.Commenting.DocComment.MissingLicenseTag"/>
@@ -34,7 +33,9 @@
         <exclude name="PSR12.Classes.ClassDeclaration.PascalCase" />
         <exclude name="PSR12.Classes.ClassDeclaration.PascalCaseClassName"/>
         <exclude name="PSR12.Classes.ClassDeclaration.ClassNameNotCamelCaps"/>
+
         <exclude name="PSR12.Files.SideEffects.FoundWithSymbols"/>
+
         <exclude name="PSR12.Namespaces.NamespaceDeclaration.TopLevelNamespace" />
     </rule>
 
