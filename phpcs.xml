@@ -6,17 +6,6 @@
 
     <!-- PSR-12 Standard -->
     <rule ref="PSR12">
-        <rule ref="Generic.Files.LineEndings">
-            <properties>
-                <property name="eolChar" value="\n" />
-            </properties>
-        </rule>
-        <rule ref="Generic.Files.LineLength">
-            <properties>
-                <property name="lineLimit" value="180"/>
-                <property name="absoluteLineLimit" value="180"/>
-            </properties>
-        </rule>
         <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace" />
         <exclude name="PSR1.Classes.ClassDeclaration" />
         <exclude name="Squiz.Classes.ValidClassName" />
@@ -24,6 +13,21 @@
 
     <!-- Other rules -->
     <rule ref="Generic.Commenting.Todo" />
+
+    <rule ref="Generic.Files.LineEndings">
+        <properties>
+            <property name="eolChar" value="\n" />
+        </properties>
+    </rule>
+
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="180"/>
+            <property name="absoluteLineLimit" value="180"/>
+        </properties>
+    </rule>
+
+    <!-- Plugin rules -->
     <rule ref="./PluginStandard/ruleset.xml"/>
 
     <!-- Direcories to check -->
