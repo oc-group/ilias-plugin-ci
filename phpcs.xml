@@ -1,12 +1,14 @@
 <?xml version="1.0"?>
-<ruleset name="ILIAS Plugin Standards">
+<ruleset name="ILIAS Plugin Standards" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/PHPCSStandards/PHP_CodeSniffer/master/phpcs.xsd">
     <description>
         Custom PHP CodeSniffer ruleset for ILIAS plugins.
     </description>
 
     <!-- Include standards -->
     <rule ref="PSR12"/>
-    <rule ref="./PluginStandard/ruleset.xml"/>
+
+    <rule ref="PluginStandard.Sniffs.Classes.ClassNamePrefixSniff"/>
+    <rule ref="PluginStandard.Sniffs.Files.FileNamePrefixSniff"/>
 
     <rule ref="Generic.Commenting.Todo"/>
     <rule ref="Generic.Commenting.Todo.TaskFound">
