@@ -8,6 +8,7 @@
     <rule ref="PSR12">
         <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace" />
         <exclude name="PSR1.Classes.ClassDeclaration" />
+        <exclude name="PSR2.Methods.MethodDeclaration.Underscore" />
         <exclude name="Squiz.Classes.ValidClassName" />
     </rule>
 
@@ -22,13 +23,13 @@
 
     <rule ref="Generic.Files.LineLength">
         <properties>
-            <property name="lineLimit" value="180"/>
-            <property name="absoluteLineLimit" value="180"/>
+            <property name="lineLimit" value="180" />
+            <property name="absoluteLineLimit" value="180" />
         </properties>
     </rule>
 
     <!-- Plugin rules -->
-    <rule ref="./PluginStandard/ruleset.xml"/>
+    <rule ref="./PluginStandard/ruleset.xml" />
 
     <!-- Direcories to check -->
     <file>../classes</file>
