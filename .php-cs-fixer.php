@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Custom PHP-CS-Fixer ruleset for ILIAS Plugins.
+ */
+
 $finder = PhpCsFixer\Finder::create()
     ->in('classes');
 

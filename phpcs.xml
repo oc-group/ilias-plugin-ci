@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<ruleset name="ILIAS Plugin Standards">
+    <description>
+        Custom PHP CodeSniffer ruleset for ILIAS plugins.
+    </description>
+
+    <!-- Includi gli standard di codifica di PSR-2 -->
+    <rule ref="PSR12"/>
+
+    <!-- Aggiungi eventuali esclusioni di regole troppo restrittive -->
+    <exclude name="Generic.Files.LineLength"/>
+    <exclude name="Generic.Commenting.DocComment.MissingCategoryTag"/>
+    <exclude name="Generic.Commenting.DocComment.MissingPackageTag"/>
+    <exclude name="Generic.Commenting.DocComment.MissingAuthorTag"/>
+    <exclude name="Generic.Commenting.DocComment.MissingLicenseTag"/>
+    <exclude name="Generic.Commenting.DocComment.MissingLinkTag"/>
+    <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
+    <exclude name="PSR1.Classes.ClassDeclaration.MissingClassName"/>
+    <exclude name="PSR1.Classes.ClassDeclaration.MissingClassNameCapitalLetter"/>
+
+    <!-- Direcories to check -->
+    <file>./classes</file>
+
+    <!-- Exclude paths -->
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+
+    <!-- Aggiungi ulteriori regole personalizzate se necessario -->
+</ruleset>
